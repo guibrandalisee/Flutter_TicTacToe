@@ -116,6 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: 400,
                         width: 400,
                         child: GridView.builder(
+                            physics: const NeverScrollableScrollPhysics(),
                             gridDelegate:
                                 const SliverGridDelegateWithFixedCrossAxisCount(
                                     crossAxisCount: 3, childAspectRatio: 1),
