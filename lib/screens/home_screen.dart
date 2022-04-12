@@ -93,10 +93,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 borderRadius: BorderRadius.circular(16),
                 color: const Color(0xff252525),
               ),
-              height: 520,
-              width: 980,
+              height: 980,
+              width: 520,
               padding: const EdgeInsets.all(32),
-              child: Row(
+              child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Column(
@@ -243,18 +243,22 @@ class _HomeScreenState extends State<HomeScreen> {
                       const SizedBox(
                         height: 128,
                       ),
-                      ElevatedButton(
-                        onPressed: restart,
-                        style: ButtonStyle(
-                            padding: MaterialStateProperty.all(
-                              const EdgeInsets.symmetric(
-                                  horizontal: 16, vertical: 12),
-                            ),
-                            backgroundColor: MaterialStateProperty.all(
-                                const Color(0xff121212))),
-                        child: const Text(
-                          "Restart",
-                          style: TextStyle(fontSize: 24),
+                      SizedBox(
+                        width: 260,
+                        height: 56,
+                        child: ElevatedButton(
+                          onPressed: restart,
+                          style: ButtonStyle(
+                              padding: MaterialStateProperty.all(
+                                const EdgeInsets.symmetric(
+                                    horizontal: 16, vertical: 12),
+                              ),
+                              backgroundColor: MaterialStateProperty.all(
+                                  const Color(0xff121212))),
+                          child: const Text(
+                            "Restart",
+                            style: TextStyle(fontSize: 24),
+                          ),
                         ),
                       ),
                     ],
