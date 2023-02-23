@@ -1,6 +1,6 @@
 # Tic-Tac-Toe
 
-[Play WEB version here](http://tictactoe.gbrandalise.tk/)
+[Play WEB version here](https://tictactoe.gbrandalise.dev/)
 
 A Tic-Tac-Toe game made using Flutter
 
